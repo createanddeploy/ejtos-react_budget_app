@@ -105,7 +105,9 @@ export const AppProvider = (props) => {
         }, 0);
         remaining = state.budget - totalExpenses;
     }
-
+    if (state.currency) {
+        
+    }
     return (
         <AppContext.Provider
             value={{
